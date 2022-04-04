@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif, Verdana;
+}
+
+html::-webkit-scrollbar {
+    background-color: #2195f32d;
+    width: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #0b7dda;
+    border-radius: 10px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background: #0b7fff;
+    color: white;
+}
+
+.main {
+    padding: 16px 250px 0px 250px;
+    margin-top: 40px;
+}
+
+#myInput {
+    background-image: url('../image/search_icon.png');
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #4fafff;
+    margin-bottom: 12px;
+}
+
+#myInput:focus {
+    outline: none;
+}
+
+#myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#myUL li {
+    width: 100%;
+    border: 1px solid #4fafff;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+#myUL li h3 {
+    font-size: 32px;
+    font-family: Verdana;
+    font-weight: 500;
+    color: #777777;
+    margin: 10px;
+}
+
+#myUL li h4 {
+    font-size: 24px;
+    font-family: Verdana;
+    font-weight: 500;
+    color: #777777;
+    margin: 5px;
+}
+
+#myUL li img {
+    max-width: 300px;
+    width: 50%;
+    min-width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+#myUL li summary {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn {
+    background-color: #2196F3;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn:hover {
+    background-color: #0b7dda;
+}
+
+.footer {
+    background-color: #333;
+    text-align: center;
+    color: #fff;
+    padding: 20px 30px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width:1200px) {
+    .main {
+        padding: 16px 150px 0px 150px;
+    }
+    #myUL li h3 {
+        font-size: 32px;
+    }
+    #myUL li h4 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width:720px) {
+    .main {
+        padding: 16px 75px 0px 75px;
+    }
+    #myUL li h3 {
+        font-size: 24px;
+    }
+    #myUL li h4 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .main {
+        padding: 16px 20px 0px 20px;
+    }
+    #myUL li h3 {
+        font-size: 20px;
+    }
+    #myUL li h4 {
+        font-size: 12px;
+    }
+}

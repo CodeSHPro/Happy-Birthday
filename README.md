@@ -1,2 +1,1 @@
-# Happy-Birthday
-Happy Birthday Congratulations For PS Students!
+# Nukus_PS_HappyBirthdays
