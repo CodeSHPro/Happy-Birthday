@@ -470,164 +470,7 @@ var AD06CDF1 = setInterval(function() {
     }
 }, 1000);
 // Set the first date we're counting down to
-var BG06CDD1 = new Date("Dec 3, 2022 0:00:01").getTime();
-
-// Update the count down every 1 second
-var BG06CDF1 = setInterval(function() {
-
-    // Get todays date and time
-    var now = new Date().getTime();
-
-    // Find the distance between now an the count down date
-    var BG06distance1 = BG06CDD1 - now;
-
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(BG06distance1 / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((BG06distance1 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((BG06distance1 % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((BG06distance1 % (1000 * 60)) / 1000);
-
-    // Output the result in an element with id="BG06"
-    document.getElementById("BG06").innerHTML = days + "d " + hours + "h " +
-        minutes + "m " + seconds + "s ";
-
-    // If the count down is over, write some text 
-    if (BG06distance1 < 0) {
-        clearInterval(BG06CDF1);
-        if (BG06distance1 < 0 & BG06distance1 > (-1000 * 24 * 60 * 60))
-            document.getElementById("BG06").innerHTML = "Happy Birthday!";
-        else {
-            clearInterval(BG06CDF1);
-            // Set the second date we're counting down to
-            var BG06CDD2 = new Date("Dec 3, 2023 0:00:01").getTime();
-
-            // Update the count down every 1 second
-            var BG06CDF2 = setInterval(function() {
-
-                // Get todays date and time
-                var now = new Date().getTime();
-
-                // Find the distance between now an the count down date
-                var BG06distance2 = BG06CDD2 - now;
-
-                // Time calculations for days, hours, minutes and seconds
-                var days = Math.floor(BG06distance2 / (1000 * 60 * 60 * 24));
-                var hours = Math.floor((BG06distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((BG06distance2 % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((BG06distance2 % (1000 * 60)) / 1000);
-
-                // Output the result in an element with id="BG06"
-                document.getElementById("BG06").innerHTML = days + "d " + hours + "h " +
-                    minutes + "m " + seconds + "s ";
-
-                // If the count down is over, write some text 
-                if (BG06distance2 < 0) {
-                    clearInterval(BG06CDF2);
-                    if (BG06distance2 < 0 & BG06distance2 > (-1000 * 24 * 60 * 60))
-                        document.getElementById("BG06").innerHTML = "Happy Birthday!";
-                    else {
-                        clearInterval(BG06CDF2);
-                        // Set the Third date we're counting down to
-                        var BG06CDD3 = new Date("Dec 3, 2024 0:00:01").getTime();
-
-                        // Update the count down every 1 second
-                        var BG06CDF3 = setInterval(function() {
-
-                            // Get todays date and time
-                            var now = new Date().getTime();
-
-                            // Find the distance between now an the count down date
-                            var BG06distance3 = BG06CDD3 - now;
-
-                            // Time calculations for days, hours, minutes and seconds
-                            var days = Math.floor(BG06distance3 / (1000 * 60 * 60 * 24));
-                            var hours = Math.floor((BG06distance3 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                            var minutes = Math.floor((BG06distance3 % (1000 * 60 * 60)) / (1000 * 60));
-                            var seconds = Math.floor((BG06distance3 % (1000 * 60)) / 1000);
-
-                            // Output the result in an element with id="BG06"
-                            document.getElementById("BG06").innerHTML = days + "d " + hours + "h " +
-                                minutes + "m " + seconds + "s ";
-
-                            // If the count down is over, write some text 
-                            // If the count down is over, write some text 
-                            if (BG06distance3 < 0) {
-                                clearInterval(BG06CDF3);
-                                if (BG06distance3 < 0 & BG06distance3 > (-1000 * 24 * 60 * 60))
-                                    document.getElementById("BG06").innerHTML = "Happy Birthday!";
-                                else {
-                                    clearInterval(BG06CDF3);
-                                    // Set the fourth date we're counting down to
-                                    var BG06CDD4 = new Date("Dec 3, 2025 0:00:01").getTime();
-
-                                    // Update the count down every 1 second
-                                    var BG06CDF4 = setInterval(function() {
-
-                                        // Get todays date and time
-                                        var now = new Date().getTime();
-
-                                        // Find the distance between now an the count down date
-                                        var BG06distance4 = BG06CDD4 - now;
-
-                                        // Time calculations for days, hours, minutes and seconds
-                                        var days = Math.floor(BG06distance4 / (1000 * 60 * 60 * 24));
-                                        var hours = Math.floor((BG06distance4 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                                        var minutes = Math.floor((BG06distance4 % (1000 * 60 * 60)) / (1000 * 60));
-                                        var seconds = Math.floor((BG06distance4 % (1000 * 60)) / 1000);
-
-                                        // Output the result in an element with id="BG06"
-                                        document.getElementById("BG06").innerHTML = days + "d " + hours + "h " +
-                                            minutes + "m " + seconds + "s ";
-
-                                        // If the count down is over, write some text 
-                                        if (BG06distance4 < 0) {
-                                            clearInterval(BG06CDF4);
-                                            if (BG06distance4 < 0 & BG06distance4 > (-1000 * 24 * 60 * 60))
-                                                document.getElementById("BG06").innerHTML = "Happy Birthday!";
-                                            else {
-                                                clearInterval(BG06CDF4);
-                                                // Set the fourth date we're counting down to
-                                                var BG06CDD5 = new Date("Dec 3, 2026 0:00:01").getTime();
-
-                                                // Update the count down every 1 second
-                                                var BG06CDF5 = setInterval(function() {
-
-                                                    // Get todays date and time
-                                                    var now = new Date().getTime();
-
-                                                    // Find the distance between now an the count down date
-                                                    var BG06distance5 = BG06CDD5 - now;
-
-                                                    // Time calculations for days, hours, minutes and seconds
-                                                    var days = Math.floor(BG06distance5 / (1000 * 60 * 60 * 24));
-                                                    var hours = Math.floor((BG06distance5 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                                                    var minutes = Math.floor((BG06distance5 % (1000 * 60 * 60)) / (1000 * 60));
-                                                    var seconds = Math.floor((BG06distance5 % (1000 * 60)) / 1000);
-
-                                                    // Output the result in an element with id="BG06"
-                                                    document.getElementById("BG06").innerHTML = days + "d " + hours + "h " +
-                                                        minutes + "m " + seconds + "s ";
-
-                                                    // If the count down is over, write some text 
-                                                    if (BG06distance5 < 0) {
-                                                        clearInterval(BG06CDF5);
-                                                        document.getElementById("BG06").innerHTML = "Happy Birthday!";
-                                                    }
-                                                }, 1000);
-                                            }
-                                        }
-                                    }, 1000);
-                                }
-                            }
-                        }, 1000);
-                    }
-                }
-            }, 1000);
-        }
-    }
-}, 1000);
-// Set the first date we're counting down to
-var MR06CDD1 = new Date("Aug 10, 2022 0:00:01").getTime();
+var MR06CDD1 = new Date("Oct 8, 2022 0:00:01").getTime();
 
 // Update the count down every 1 second
 var MR06CDF1 = setInterval(function() {
@@ -656,7 +499,7 @@ var MR06CDF1 = setInterval(function() {
         else {
             clearInterval(MR06CDF1);
             // Set the second date we're counting down to
-            var MR06CDD2 = new Date("Aug 10, 2023 0:00:01").getTime();
+            var MR06CDD2 = new Date("Oct 8, 2023 0:00:01").getTime();
 
             // Update the count down every 1 second
             var MR06CDF2 = setInterval(function() {
@@ -685,7 +528,7 @@ var MR06CDF1 = setInterval(function() {
                     else {
                         clearInterval(MR06CDF2);
                         // Set the Third date we're counting down to
-                        var MR06CDD3 = new Date("Aug 10, 2024 0:00:01").getTime();
+                        var MR06CDD3 = new Date("Oct 8, 2024 0:00:01").getTime();
 
                         // Update the count down every 1 second
                         var MR06CDF3 = setInterval(function() {
@@ -715,7 +558,7 @@ var MR06CDF1 = setInterval(function() {
                                 else {
                                     clearInterval(MR06CDF3);
                                     // Set the fourth date we're counting down to
-                                    var MR06CDD4 = new Date("Aug 10, 2025 0:00:01").getTime();
+                                    var MR06CDD4 = new Date("Oct 8, 2025 0:00:01").getTime();
 
                                     // Update the count down every 1 second
                                     var MR06CDF4 = setInterval(function() {
@@ -744,7 +587,7 @@ var MR06CDF1 = setInterval(function() {
                                             else {
                                                 clearInterval(MR06CDF4);
                                                 // Set the fourth date we're counting down to
-                                                var MR06CDD5 = new Date("Aug 10, 2026 0:00:01").getTime();
+                                                var MR06CDD5 = new Date("Oct 8, 2026 0:00:01").getTime();
 
                                                 // Update the count down every 1 second
                                                 var MR06CDF5 = setInterval(function() {
@@ -926,6 +769,1105 @@ var NS07CDF1 = setInterval(function() {
                                                     if (NS07distance5 < 0) {
                                                         clearInterval(NS07CDF5);
                                                         document.getElementById("NS07").innerHTML = "Happy Birthday!";
+                                                    }
+                                                }, 1000);
+                                            }
+                                        }
+                                    }, 1000);
+                                }
+                            }
+                        }, 1000);
+                    }
+                }
+            }, 1000);
+        }
+    }
+}, 1000);
+// Set the first date we're counting down to
+var RS06CDD1 = new Date("Jun 21, 2022 0:00:01").getTime();
+
+// Update the count down every 1 second
+var RS06CDF1 = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now an the count down date
+    var RS06distance1 = RS06CDD1 - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(RS06distance1 / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((RS06distance1 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((RS06distance1 % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((RS06distance1 % (1000 * 60)) / 1000);
+
+    // Output the result in an element with id="RS06"
+    document.getElementById("RS06").innerHTML = days + "d " + hours + "h " +
+        minutes + "m " + seconds + "s ";
+
+    // If the count down is over, write some text 
+    if (RS06distance1 < 0) {
+        clearInterval(RS06CDF1);
+        if (RS06distance1 < 0 & RS06distance1 > (-1000 * 24 * 60 * 60))
+            document.getElementById("RS06").innerHTML = "Happy Birthday!";
+        else {
+            clearInterval(RS06CDF1);
+            // Set the second date we're counting down to
+            var RS06CDD2 = new Date("Jun 21, 2023 0:00:01").getTime();
+
+            // Update the count down every 1 second
+            var RS06CDF2 = setInterval(function() {
+
+                // Get todays date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now an the count down date
+                var RS06distance2 = RS06CDD2 - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(RS06distance2 / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((RS06distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((RS06distance2 % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((RS06distance2 % (1000 * 60)) / 1000);
+
+                // Output the result in an element with id="RS06"
+                document.getElementById("RS06").innerHTML = days + "d " + hours + "h " +
+                    minutes + "m " + seconds + "s ";
+
+                // If the count down is over, write some text 
+                if (RS06distance2 < 0) {
+                    clearInterval(RS06CDF2);
+                    if (RS06distance2 < 0 & RS06distance2 > (-1000 * 24 * 60 * 60))
+                        document.getElementById("RS06").innerHTML = "Happy Birthday!";
+                    else {
+                        clearInterval(RS06CDF2);
+                        // Set the Third date we're counting down to
+                        var RS06CDD3 = new Date("Jun 21, 2024 0:00:01").getTime();
+
+                        // Update the count down every 1 second
+                        var RS06CDF3 = setInterval(function() {
+
+                            // Get todays date and time
+                            var now = new Date().getTime();
+
+                            // Find the distance between now an the count down date
+                            var RS06distance3 = RS06CDD3 - now;
+
+                            // Time calculations for days, hours, minutes and seconds
+                            var days = Math.floor(RS06distance3 / (1000 * 60 * 60 * 24));
+                            var hours = Math.floor((RS06distance3 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            var minutes = Math.floor((RS06distance3 % (1000 * 60 * 60)) / (1000 * 60));
+                            var seconds = Math.floor((RS06distance3 % (1000 * 60)) / 1000);
+
+                            // Output the result in an element with id="RS06"
+                            document.getElementById("RS06").innerHTML = days + "d " + hours + "h " +
+                                minutes + "m " + seconds + "s ";
+
+                            // If the count down is over, write some text 
+                            // If the count down is over, write some text 
+                            if (RS06distance3 < 0) {
+                                clearInterval(RS06CDF3);
+                                if (RS06distance3 < 0 & RS06distance3 > (-1000 * 24 * 60 * 60))
+                                    document.getElementById("RS06").innerHTML = "Happy Birthday!";
+                                else {
+                                    clearInterval(RS06CDF3);
+                                    // Set the fourth date we're counting down to
+                                    var RS06CDD4 = new Date("Jun 21, 2025 0:00:01").getTime();
+
+                                    // Update the count down every 1 second
+                                    var RS06CDF4 = setInterval(function() {
+
+                                        // Get todays date and time
+                                        var now = new Date().getTime();
+
+                                        // Find the distance between now an the count down date
+                                        var RS06distance4 = RS06CDD4 - now;
+
+                                        // Time calculations for days, hours, minutes and seconds
+                                        var days = Math.floor(RS06distance4 / (1000 * 60 * 60 * 24));
+                                        var hours = Math.floor((RS06distance4 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                        var minutes = Math.floor((RS06distance4 % (1000 * 60 * 60)) / (1000 * 60));
+                                        var seconds = Math.floor((RS06distance4 % (1000 * 60)) / 1000);
+
+                                        // Output the result in an element with id="RS06"
+                                        document.getElementById("RS06").innerHTML = days + "d " + hours + "h " +
+                                            minutes + "m " + seconds + "s ";
+
+                                        // If the count down is over, write some text 
+                                        if (RS06distance4 < 0) {
+                                            clearInterval(RS06CDF4);
+                                            if (RS06distance4 < 0 & RS06distance4 > (-1000 * 24 * 60 * 60))
+                                                document.getElementById("RS06").innerHTML = "Happy Birthday!";
+                                            else {
+                                                clearInterval(RS06CDF4);
+                                                // Set the fourth date we're counting down to
+                                                var RS06CDD5 = new Date("Jun 21, 2026 0:00:01").getTime();
+
+                                                // Update the count down every 1 second
+                                                var RS06CDF5 = setInterval(function() {
+
+                                                    // Get todays date and time
+                                                    var now = new Date().getTime();
+
+                                                    // Find the distance between now an the count down date
+                                                    var RS06distance5 = RS06CDD5 - now;
+
+                                                    // Time calculations for days, hours, minutes and seconds
+                                                    var days = Math.floor(RS06distance5 / (1000 * 60 * 60 * 24));
+                                                    var hours = Math.floor((RS06distance5 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                                    var minutes = Math.floor((RS06distance5 % (1000 * 60 * 60)) / (1000 * 60));
+                                                    var seconds = Math.floor((RS06distance5 % (1000 * 60)) / 1000);
+
+                                                    // Output the result in an element with id="RS06"
+                                                    document.getElementById("RS06").innerHTML = days + "d " + hours + "h " +
+                                                        minutes + "m " + seconds + "s ";
+
+                                                    // If the count down is over, write some text 
+                                                    if (RS06distance5 < 0) {
+                                                        clearInterval(RS06CDF5);
+                                                        document.getElementById("RS06").innerHTML = "Happy Birthday!";
+                                                    }
+                                                }, 1000);
+                                            }
+                                        }
+                                    }, 1000);
+                                }
+                            }
+                        }, 1000);
+                    }
+                }
+            }, 1000);
+        }
+    }
+}, 1000);
+// Set the first date we're counting down to
+var SJ06CDD1 = new Date("Dec 8, 2022 0:00:01").getTime();
+
+// Update the count down every 1 second
+var SJ06CDF1 = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now an the count down date
+    var SJ06distance1 = SJ06CDD1 - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(SJ06distance1 / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((SJ06distance1 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((SJ06distance1 % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((SJ06distance1 % (1000 * 60)) / 1000);
+
+    // Output the result in an element with id="SJ06"
+    document.getElementById("SJ06").innerHTML = days + "d " + hours + "h " +
+        minutes + "m " + seconds + "s ";
+
+    // If the count down is over, write some text 
+    if (SJ06distance1 < 0) {
+        clearInterval(SJ06CDF1);
+        if (SJ06distance1 < 0 & SJ06distance1 > (-1000 * 24 * 60 * 60))
+            document.getElementById("SJ06").innerHTML = "Happy Birthday!";
+        else {
+            clearInterval(SJ06CDF1);
+            // Set the second date we're counting down to
+            var SJ06CDD2 = new Date("Dec 8, 2023 0:00:01").getTime();
+
+            // Update the count down every 1 second
+            var SJ06CDF2 = setInterval(function() {
+
+                // Get todays date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now an the count down date
+                var SJ06distance2 = SJ06CDD2 - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(SJ06distance2 / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((SJ06distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((SJ06distance2 % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((SJ06distance2 % (1000 * 60)) / 1000);
+
+                // Output the result in an element with id="SJ06"
+                document.getElementById("SJ06").innerHTML = days + "d " + hours + "h " +
+                    minutes + "m " + seconds + "s ";
+
+                // If the count down is over, write some text 
+                if (SJ06distance2 < 0) {
+                    clearInterval(SJ06CDF2);
+                    if (SJ06distance2 < 0 & SJ06distance2 > (-1000 * 24 * 60 * 60))
+                        document.getElementById("SJ06").innerHTML = "Happy Birthday!";
+                    else {
+                        clearInterval(SJ06CDF2);
+                        // Set the Third date we're counting down to
+                        var SJ06CDD3 = new Date("Dec 8, 2024 0:00:01").getTime();
+
+                        // Update the count down every 1 second
+                        var SJ06CDF3 = setInterval(function() {
+
+                            // Get todays date and time
+                            var now = new Date().getTime();
+
+                            // Find the distance between now an the count down date
+                            var SJ06distance3 = SJ06CDD3 - now;
+
+                            // Time calculations for days, hours, minutes and seconds
+                            var days = Math.floor(SJ06distance3 / (1000 * 60 * 60 * 24));
+                            var hours = Math.floor((SJ06distance3 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            var minutes = Math.floor((SJ06distance3 % (1000 * 60 * 60)) / (1000 * 60));
+                            var seconds = Math.floor((SJ06distance3 % (1000 * 60)) / 1000);
+
+                            // Output the result in an element with id="SJ06"
+                            document.getElementById("SJ06").innerHTML = days + "d " + hours + "h " +
+                                minutes + "m " + seconds + "s ";
+
+                            // If the count down is over, write some text 
+                            // If the count down is over, write some text 
+                            if (SJ06distance3 < 0) {
+                                clearInterval(SJ06CDF3);
+                                if (SJ06distance3 < 0 & SJ06distance3 > (-1000 * 24 * 60 * 60))
+                                    document.getElementById("SJ06").innerHTML = "Happy Birthday!";
+                                else {
+                                    clearInterval(SJ06CDF3);
+                                    // Set the fourth date we're counting down to
+                                    var SJ06CDD4 = new Date("Dec 8, 2025 0:00:01").getTime();
+
+                                    // Update the count down every 1 second
+                                    var SJ06CDF4 = setInterval(function() {
+
+                                        // Get todays date and time
+                                        var now = new Date().getTime();
+
+                                        // Find the distance between now an the count down date
+                                        var SJ06distance4 = SJ06CDD4 - now;
+
+                                        // Time calculations for days, hours, minutes and seconds
+                                        var days = Math.floor(SJ06distance4 / (1000 * 60 * 60 * 24));
+                                        var hours = Math.floor((SJ06distance4 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                        var minutes = Math.floor((SJ06distance4 % (1000 * 60 * 60)) / (1000 * 60));
+                                        var seconds = Math.floor((SJ06distance4 % (1000 * 60)) / 1000);
+
+                                        // Output the result in an element with id="SJ06"
+                                        document.getElementById("SJ06").innerHTML = days + "d " + hours + "h " +
+                                            minutes + "m " + seconds + "s ";
+
+                                        // If the count down is over, write some text 
+                                        if (SJ06distance4 < 0) {
+                                            clearInterval(SJ06CDF4);
+                                            if (SJ06distance4 < 0 & SJ06distance4 > (-1000 * 24 * 60 * 60))
+                                                document.getElementById("SJ06").innerHTML = "Happy Birthday!";
+                                            else {
+                                                clearInterval(SJ06CDF4);
+                                                // Set the fourth date we're counting down to
+                                                var SJ06CDD5 = new Date("Dec 8, 2026 0:00:01").getTime();
+
+                                                // Update the count down every 1 second
+                                                var SJ06CDF5 = setInterval(function() {
+
+                                                    // Get todays date and time
+                                                    var now = new Date().getTime();
+
+                                                    // Find the distance between now an the count down date
+                                                    var SJ06distance5 = SJ06CDD5 - now;
+
+                                                    // Time calculations for days, hours, minutes and seconds
+                                                    var days = Math.floor(SJ06distance5 / (1000 * 60 * 60 * 24));
+                                                    var hours = Math.floor((SJ06distance5 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                                    var minutes = Math.floor((SJ06distance5 % (1000 * 60 * 60)) / (1000 * 60));
+                                                    var seconds = Math.floor((SJ06distance5 % (1000 * 60)) / 1000);
+
+                                                    // Output the result in an element with id="SJ06"
+                                                    document.getElementById("SJ06").innerHTML = days + "d " + hours + "h " +
+                                                        minutes + "m " + seconds + "s ";
+
+                                                    // If the count down is over, write some text 
+                                                    if (SJ06distance5 < 0) {
+                                                        clearInterval(SJ06CDF5);
+                                                        document.getElementById("SJ06").innerHTML = "Happy Birthday!";
+                                                    }
+                                                }, 1000);
+                                            }
+                                        }
+                                    }, 1000);
+                                }
+                            }
+                        }, 1000);
+                    }
+                }
+            }, 1000);
+        }
+    }
+}, 1000);
+// Set the first date we're counting down to
+var SJ06CDD1 = new Date("Dec 8, 2022 0:00:01").getTime();
+
+// Update the count down every 1 second
+var SJ06CDF1 = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now an the count down date
+    var SJ06distance1 = SJ06CDD1 - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(SJ06distance1 / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((SJ06distance1 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((SJ06distance1 % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((SJ06distance1 % (1000 * 60)) / 1000);
+
+    // Output the result in an element with id="SJ06"
+    document.getElementById("SJ06").innerHTML = days + "d " + hours + "h " +
+        minutes + "m " + seconds + "s ";
+
+    // If the count down is over, write some text 
+    if (SJ06distance1 < 0) {
+        clearInterval(SJ06CDF1);
+        if (SJ06distance1 < 0 & SJ06distance1 > (-1000 * 24 * 60 * 60))
+            document.getElementById("SJ06").innerHTML = "Happy Birthday!";
+        else {
+            clearInterval(SJ06CDF1);
+            // Set the second date we're counting down to
+            var SJ06CDD2 = new Date("Dec 8, 2023 0:00:01").getTime();
+
+            // Update the count down every 1 second
+            var SJ06CDF2 = setInterval(function() {
+
+                // Get todays date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now an the count down date
+                var SJ06distance2 = SJ06CDD2 - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(SJ06distance2 / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((SJ06distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((SJ06distance2 % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((SJ06distance2 % (1000 * 60)) / 1000);
+
+                // Output the result in an element with id="SJ06"
+                document.getElementById("SJ06").innerHTML = days + "d " + hours + "h " +
+                    minutes + "m " + seconds + "s ";
+
+                // If the count down is over, write some text 
+                if (SJ06distance2 < 0) {
+                    clearInterval(SJ06CDF2);
+                    if (SJ06distance2 < 0 & SJ06distance2 > (-1000 * 24 * 60 * 60))
+                        document.getElementById("SJ06").innerHTML = "Happy Birthday!";
+                    else {
+                        clearInterval(SJ06CDF2);
+                        // Set the Third date we're counting down to
+                        var SJ06CDD3 = new Date("Dec 8, 2024 0:00:01").getTime();
+
+                        // Update the count down every 1 second
+                        var SJ06CDF3 = setInterval(function() {
+
+                            // Get todays date and time
+                            var now = new Date().getTime();
+
+                            // Find the distance between now an the count down date
+                            var SJ06distance3 = SJ06CDD3 - now;
+
+                            // Time calculations for days, hours, minutes and seconds
+                            var days = Math.floor(SJ06distance3 / (1000 * 60 * 60 * 24));
+                            var hours = Math.floor((SJ06distance3 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            var minutes = Math.floor((SJ06distance3 % (1000 * 60 * 60)) / (1000 * 60));
+                            var seconds = Math.floor((SJ06distance3 % (1000 * 60)) / 1000);
+
+                            // Output the result in an element with id="SJ06"
+                            document.getElementById("SJ06").innerHTML = days + "d " + hours + "h " +
+                                minutes + "m " + seconds + "s ";
+
+                            // If the count down is over, write some text 
+                            // If the count down is over, write some text 
+                            if (SJ06distance3 < 0) {
+                                clearInterval(SJ06CDF3);
+                                if (SJ06distance3 < 0 & SJ06distance3 > (-1000 * 24 * 60 * 60))
+                                    document.getElementById("SJ06").innerHTML = "Happy Birthday!";
+                                else {
+                                    clearInterval(SJ06CDF3);
+                                    // Set the fourth date we're counting down to
+                                    var SJ06CDD4 = new Date("Dec 8, 2025 0:00:01").getTime();
+
+                                    // Update the count down every 1 second
+                                    var SJ06CDF4 = setInterval(function() {
+
+                                        // Get todays date and time
+                                        var now = new Date().getTime();
+
+                                        // Find the distance between now an the count down date
+                                        var SJ06distance4 = SJ06CDD4 - now;
+
+                                        // Time calculations for days, hours, minutes and seconds
+                                        var days = Math.floor(SJ06distance4 / (1000 * 60 * 60 * 24));
+                                        var hours = Math.floor((SJ06distance4 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                        var minutes = Math.floor((SJ06distance4 % (1000 * 60 * 60)) / (1000 * 60));
+                                        var seconds = Math.floor((SJ06distance4 % (1000 * 60)) / 1000);
+
+                                        // Output the result in an element with id="SJ06"
+                                        document.getElementById("SJ06").innerHTML = days + "d " + hours + "h " +
+                                            minutes + "m " + seconds + "s ";
+
+                                        // If the count down is over, write some text 
+                                        if (SJ06distance4 < 0) {
+                                            clearInterval(SJ06CDF4);
+                                            if (SJ06distance4 < 0 & SJ06distance4 > (-1000 * 24 * 60 * 60))
+                                                document.getElementById("SJ06").innerHTML = "Happy Birthday!";
+                                            else {
+                                                clearInterval(SJ06CDF4);
+                                                // Set the fourth date we're counting down to
+                                                var SJ06CDD5 = new Date("Dec 8, 2026 0:00:01").getTime();
+
+                                                // Update the count down every 1 second
+                                                var SJ06CDF5 = setInterval(function() {
+
+                                                    // Get todays date and time
+                                                    var now = new Date().getTime();
+
+                                                    // Find the distance between now an the count down date
+                                                    var SJ06distance5 = SJ06CDD5 - now;
+
+                                                    // Time calculations for days, hours, minutes and seconds
+                                                    var days = Math.floor(SJ06distance5 / (1000 * 60 * 60 * 24));
+                                                    var hours = Math.floor((SJ06distance5 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                                    var minutes = Math.floor((SJ06distance5 % (1000 * 60 * 60)) / (1000 * 60));
+                                                    var seconds = Math.floor((SJ06distance5 % (1000 * 60)) / 1000);
+
+                                                    // Output the result in an element with id="SJ06"
+                                                    document.getElementById("SJ06").innerHTML = days + "d " + hours + "h " +
+                                                        minutes + "m " + seconds + "s ";
+
+                                                    // If the count down is over, write some text 
+                                                    if (SJ06distance5 < 0) {
+                                                        clearInterval(SJ06CDF5);
+                                                        document.getElementById("SJ06").innerHTML = "Happy Birthday!";
+                                                    }
+                                                }, 1000);
+                                            }
+                                        }
+                                    }, 1000);
+                                }
+                            }
+                        }, 1000);
+                    }
+                }
+            }, 1000);
+        }
+    }
+}, 1000);
+// Set the first date we're counting down to
+var SHA06CDD1 = new Date("Sep 8, 2022 0:00:01").getTime();
+
+// Update the count down every 1 second
+var SHA06CDF1 = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now an the count down date
+    var SHA06distance1 = SHA06CDD1 - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(SHA06distance1 / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((SHA06distance1 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((SHA06distance1 % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((SHA06distance1 % (1000 * 60)) / 1000);
+
+    // Output the result in an element with id="SHA06"
+    document.getElementById("SHA06").innerHTML = days + "d " + hours + "h " +
+        minutes + "m " + seconds + "s ";
+
+    // If the count down is over, write some text 
+    if (SHA06distance1 < 0) {
+        clearInterval(SHA06CDF1);
+        if (SHA06distance1 < 0 & SHA06distance1 > (-1000 * 24 * 60 * 60))
+            document.getElementById("SHA06").innerHTML = "Happy Birthday!";
+        else {
+            clearInterval(SHA06CDF1);
+            // Set the second date we're counting down to
+            var SHA06CDD2 = new Date("Sep 8, 2023 0:00:01").getTime();
+
+            // Update the count down every 1 second
+            var SHA06CDF2 = setInterval(function() {
+
+                // Get todays date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now an the count down date
+                var SHA06distance2 = SHA06CDD2 - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(SHA06distance2 / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((SHA06distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((SHA06distance2 % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((SHA06distance2 % (1000 * 60)) / 1000);
+
+                // Output the result in an element with id="SHA06"
+                document.getElementById("SHA06").innerHTML = days + "d " + hours + "h " +
+                    minutes + "m " + seconds + "s ";
+
+                // If the count down is over, write some text 
+                if (SHA06distance2 < 0) {
+                    clearInterval(SHA06CDF2);
+                    if (SHA06distance2 < 0 & SHA06distance2 > (-1000 * 24 * 60 * 60))
+                        document.getElementById("SHA06").innerHTML = "Happy Birthday!";
+                    else {
+                        clearInterval(SHA06CDF2);
+                        // Set the Third date we're counting down to
+                        var SHA06CDD3 = new Date("Sep 8, 2024 0:00:01").getTime();
+
+                        // Update the count down every 1 second
+                        var SHA06CDF3 = setInterval(function() {
+
+                            // Get todays date and time
+                            var now = new Date().getTime();
+
+                            // Find the distance between now an the count down date
+                            var SHA06distance3 = SHA06CDD3 - now;
+
+                            // Time calculations for days, hours, minutes and seconds
+                            var days = Math.floor(SHA06distance3 / (1000 * 60 * 60 * 24));
+                            var hours = Math.floor((SHA06distance3 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            var minutes = Math.floor((SHA06distance3 % (1000 * 60 * 60)) / (1000 * 60));
+                            var seconds = Math.floor((SHA06distance3 % (1000 * 60)) / 1000);
+
+                            // Output the result in an element with id="SHA06"
+                            document.getElementById("SHA06").innerHTML = days + "d " + hours + "h " +
+                                minutes + "m " + seconds + "s ";
+
+                            // If the count down is over, write some text 
+                            // If the count down is over, write some text 
+                            if (SHA06distance3 < 0) {
+                                clearInterval(SHA06CDF3);
+                                if (SHA06distance3 < 0 & SHA06distance3 > (-1000 * 24 * 60 * 60))
+                                    document.getElementById("SHA06").innerHTML = "Happy Birthday!";
+                                else {
+                                    clearInterval(SHA06CDF3);
+                                    // Set the fourth date we're counting down to
+                                    var SHA06CDD4 = new Date("Sep 8, 2025 0:00:01").getTime();
+
+                                    // Update the count down every 1 second
+                                    var SHA06CDF4 = setInterval(function() {
+
+                                        // Get todays date and time
+                                        var now = new Date().getTime();
+
+                                        // Find the distance between now an the count down date
+                                        var SHA06distance4 = SHA06CDD4 - now;
+
+                                        // Time calculations for days, hours, minutes and seconds
+                                        var days = Math.floor(SHA06distance4 / (1000 * 60 * 60 * 24));
+                                        var hours = Math.floor((SHA06distance4 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                        var minutes = Math.floor((SHA06distance4 % (1000 * 60 * 60)) / (1000 * 60));
+                                        var seconds = Math.floor((SHA06distance4 % (1000 * 60)) / 1000);
+
+                                        // Output the result in an element with id="SHA06"
+                                        document.getElementById("SHA06").innerHTML = days + "d " + hours + "h " +
+                                            minutes + "m " + seconds + "s ";
+
+                                        // If the count down is over, write some text 
+                                        if (SHA06distance4 < 0) {
+                                            clearInterval(SHA06CDF4);
+                                            if (SHA06distance4 < 0 & SHA06distance4 > (-1000 * 24 * 60 * 60))
+                                                document.getElementById("SHA06").innerHTML = "Happy Birthday!";
+                                            else {
+                                                clearInterval(SHA06CDF4);
+                                                // Set the fourth date we're counting down to
+                                                var SHA06CDD5 = new Date("Sep 8, 2026 0:00:01").getTime();
+
+                                                // Update the count down every 1 second
+                                                var SHA06CDF5 = setInterval(function() {
+
+                                                    // Get todays date and time
+                                                    var now = new Date().getTime();
+
+                                                    // Find the distance between now an the count down date
+                                                    var SHA06distance5 = SHA06CDD5 - now;
+
+                                                    // Time calculations for days, hours, minutes and seconds
+                                                    var days = Math.floor(SHA06distance5 / (1000 * 60 * 60 * 24));
+                                                    var hours = Math.floor((SHA06distance5 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                                    var minutes = Math.floor((SHA06distance5 % (1000 * 60 * 60)) / (1000 * 60));
+                                                    var seconds = Math.floor((SHA06distance5 % (1000 * 60)) / 1000);
+
+                                                    // Output the result in an element with id="SHA06"
+                                                    document.getElementById("SHA06").innerHTML = days + "d " + hours + "h " +
+                                                        minutes + "m " + seconds + "s ";
+
+                                                    // If the count down is over, write some text 
+                                                    if (SHA06distance5 < 0) {
+                                                        clearInterval(SHA06CDF5);
+                                                        document.getElementById("SHA06").innerHTML = "Happy Birthday!";
+                                                    }
+                                                }, 1000);
+                                            }
+                                        }
+                                    }, 1000);
+                                }
+                            }
+                        }, 1000);
+                    }
+                }
+            }, 1000);
+        }
+    }
+}, 1000);
+// Set the first date we're counting down to
+var UD06CDD1 = new Date("Jul 22, 2022 0:00:01").getTime();
+
+// Update the count down every 1 second
+var UD06CDF1 = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now an the count down date
+    var UD06distance1 = UD06CDD1 - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(UD06distance1 / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((UD06distance1 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((UD06distance1 % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((UD06distance1 % (1000 * 60)) / 1000);
+
+    // Output the result in an element with id="UD06"
+    document.getElementById("UD06").innerHTML = days + "d " + hours + "h " +
+        minutes + "m " + seconds + "s ";
+
+    // If the count down is over, write some text 
+    if (UD06distance1 < 0) {
+        clearInterval(UD06CDF1);
+        if (UD06distance1 < 0 & UD06distance1 > (-1000 * 24 * 60 * 60))
+            document.getElementById("UD06").innerHTML = "Happy Birthday!";
+        else {
+            clearInterval(UD06CDF1);
+            // Set the second date we're counting down to
+            var UD06CDD2 = new Date("Jul 22, 2023 0:00:01").getTime();
+
+            // Update the count down every 1 second
+            var UD06CDF2 = setInterval(function() {
+
+                // Get todays date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now an the count down date
+                var UD06distance2 = UD06CDD2 - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(UD06distance2 / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((UD06distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((UD06distance2 % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((UD06distance2 % (1000 * 60)) / 1000);
+
+                // Output the result in an element with id="UD06"
+                document.getElementById("UD06").innerHTML = days + "d " + hours + "h " +
+                    minutes + "m " + seconds + "s ";
+
+                // If the count down is over, write some text 
+                if (UD06distance2 < 0) {
+                    clearInterval(UD06CDF2);
+                    if (UD06distance2 < 0 & UD06distance2 > (-1000 * 24 * 60 * 60))
+                        document.getElementById("UD06").innerHTML = "Happy Birthday!";
+                    else {
+                        clearInterval(UD06CDF2);
+                        // Set the Third date we're counting down to
+                        var UD06CDD3 = new Date("Jul 22, 2024 0:00:01").getTime();
+
+                        // Update the count down every 1 second
+                        var UD06CDF3 = setInterval(function() {
+
+                            // Get todays date and time
+                            var now = new Date().getTime();
+
+                            // Find the distance between now an the count down date
+                            var UD06distance3 = UD06CDD3 - now;
+
+                            // Time calculations for days, hours, minutes and seconds
+                            var days = Math.floor(UD06distance3 / (1000 * 60 * 60 * 24));
+                            var hours = Math.floor((UD06distance3 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            var minutes = Math.floor((UD06distance3 % (1000 * 60 * 60)) / (1000 * 60));
+                            var seconds = Math.floor((UD06distance3 % (1000 * 60)) / 1000);
+
+                            // Output the result in an element with id="UD06"
+                            document.getElementById("UD06").innerHTML = days + "d " + hours + "h " +
+                                minutes + "m " + seconds + "s ";
+
+                            // If the count down is over, write some text 
+                            // If the count down is over, write some text 
+                            if (UD06distance3 < 0) {
+                                clearInterval(UD06CDF3);
+                                if (UD06distance3 < 0 & UD06distance3 > (-1000 * 24 * 60 * 60))
+                                    document.getElementById("UD06").innerHTML = "Happy Birthday!";
+                                else {
+                                    clearInterval(UD06CDF3);
+                                    // Set the fourth date we're counting down to
+                                    var UD06CDD4 = new Date("Jul 22, 2025 0:00:01").getTime();
+
+                                    // Update the count down every 1 second
+                                    var UD06CDF4 = setInterval(function() {
+
+                                        // Get todays date and time
+                                        var now = new Date().getTime();
+
+                                        // Find the distance between now an the count down date
+                                        var UD06distance4 = UD06CDD4 - now;
+
+                                        // Time calculations for days, hours, minutes and seconds
+                                        var days = Math.floor(UD06distance4 / (1000 * 60 * 60 * 24));
+                                        var hours = Math.floor((UD06distance4 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                        var minutes = Math.floor((UD06distance4 % (1000 * 60 * 60)) / (1000 * 60));
+                                        var seconds = Math.floor((UD06distance4 % (1000 * 60)) / 1000);
+
+                                        // Output the result in an element with id="UD06"
+                                        document.getElementById("UD06").innerHTML = days + "d " + hours + "h " +
+                                            minutes + "m " + seconds + "s ";
+
+                                        // If the count down is over, write some text 
+                                        if (UD06distance4 < 0) {
+                                            clearInterval(UD06CDF4);
+                                            if (UD06distance4 < 0 & UD06distance4 > (-1000 * 24 * 60 * 60))
+                                                document.getElementById("UD06").innerHTML = "Happy Birthday!";
+                                            else {
+                                                clearInterval(UD06CDF4);
+                                                // Set the fourth date we're counting down to
+                                                var UD06CDD5 = new Date("Jul 22, 2026 0:00:01").getTime();
+
+                                                // Update the count down every 1 second
+                                                var UD06CDF5 = setInterval(function() {
+
+                                                    // Get todays date and time
+                                                    var now = new Date().getTime();
+
+                                                    // Find the distance between now an the count down date
+                                                    var UD06distance5 = UD06CDD5 - now;
+
+                                                    // Time calculations for days, hours, minutes and seconds
+                                                    var days = Math.floor(UD06distance5 / (1000 * 60 * 60 * 24));
+                                                    var hours = Math.floor((UD06distance5 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                                    var minutes = Math.floor((UD06distance5 % (1000 * 60 * 60)) / (1000 * 60));
+                                                    var seconds = Math.floor((UD06distance5 % (1000 * 60)) / 1000);
+
+                                                    // Output the result in an element with id="UD06"
+                                                    document.getElementById("UD06").innerHTML = days + "d " + hours + "h " +
+                                                        minutes + "m " + seconds + "s ";
+
+                                                    // If the count down is over, write some text 
+                                                    if (UD06distance5 < 0) {
+                                                        clearInterval(UD06CDF5);
+                                                        document.getElementById("UD06").innerHTML = "Happy Birthday!";
+                                                    }
+                                                }, 1000);
+                                            }
+                                        }
+                                    }, 1000);
+                                }
+                            }
+                        }, 1000);
+                    }
+                }
+            }, 1000);
+        }
+    }
+}, 1000);
+// Set the first date we're counting down to
+var SA06CDD1 = new Date("Sep 26, 2022 0:00:01").getTime();
+
+// Update the count down every 1 second
+var SA06CDF1 = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now an the count down date
+    var SA06SA06distance1 = SA06CDD1 - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(SA06SA06distance1 / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((SA06SA06distance1 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((SA06SA06distance1 % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((SA06SA06distance1 % (1000 * 60)) / 1000);
+
+    // Output the result in an element with id="SA06"
+    document.getElementById("SA06").innerHTML = days + "d " + hours + "h " +
+        minutes + "m " + seconds + "s ";
+
+    // If the count down is over, write some text 
+    if (SA06SA06distance1 < 0) {
+        clearInterval(SA06CDF1);
+        if (SA06SA06distance1 < 0 & SA06SA06distance1 > (-1000 * 24 * 60 * 60))
+            document.getElementById("SA06").innerHTML = "Happy Birthday!";
+        else {
+            clearInterval(SA06CDF1);
+            // Set the second date we're counting down to
+            var SA06CDD2 = new Date("Sep 26, 2023 0:00:01").getTime();
+
+            // Update the count down every 1 second
+            var SA06CDF2 = setInterval(function() {
+
+                // Get todays date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now an the count down date
+                var SA06distance2 = SA06CDD2 - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(SA06distance2 / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((SA06distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((SA06distance2 % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((SA06distance2 % (1000 * 60)) / 1000);
+
+                // Output the result in an element with id="SA06"
+                document.getElementById("SA06").innerHTML = days + "d " + hours + "h " +
+                    minutes + "m " + seconds + "s ";
+
+                // If the count down is over, write some text 
+                if (SA06distance2 < 0) {
+                    clearInterval(SA06CDF2);
+                    if (SA06distance2 < 0 & SA06distance2 > (-1000 * 24 * 60 * 60))
+                        document.getElementById("SA06").innerHTML = "Happy Birthday!";
+                    else {
+                        clearInterval(SA06CDF2);
+                        // Set the Third date we're counting down to
+                        var SA06CDD3 = new Date("Sep 26, 2024 0:00:01").getTime();
+
+                        // Update the count down every 1 second
+                        var SA06CDF3 = setInterval(function() {
+
+                            // Get todays date and time
+                            var now = new Date().getTime();
+
+                            // Find the distance between now an the count down date
+                            var SA06distance3 = SA06CDD3 - now;
+
+                            // Time calculations for days, hours, minutes and seconds
+                            var days = Math.floor(SA06distance3 / (1000 * 60 * 60 * 24));
+                            var hours = Math.floor((SA06distance3 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            var minutes = Math.floor((SA06distance3 % (1000 * 60 * 60)) / (1000 * 60));
+                            var seconds = Math.floor((SA06distance3 % (1000 * 60)) / 1000);
+
+                            // Output the result in an element with id="SA06"
+                            document.getElementById("SA06").innerHTML = days + "d " + hours + "h " +
+                                minutes + "m " + seconds + "s ";
+
+                            // If the count down is over, write some text 
+                            // If the count down is over, write some text 
+                            if (SA06distance3 < 0) {
+                                clearInterval(SA06CDF3);
+                                if (SA06distance3 < 0 & SA06distance3 > (-1000 * 24 * 60 * 60))
+                                    document.getElementById("SA06").innerHTML = "Happy Birthday!";
+                                else {
+                                    clearInterval(SA06CDF3);
+                                    // Set the fourth date we're counting down to
+                                    var SA06CDD4 = new Date("Sep 26, 2025 0:00:01").getTime();
+
+                                    // Update the count down every 1 second
+                                    var SA06CDF4 = setInterval(function() {
+
+                                        // Get todays date and time
+                                        var now = new Date().getTime();
+
+                                        // Find the distance between now an the count down date
+                                        var SA06distance4 = SA06CDD4 - now;
+
+                                        // Time calculations for days, hours, minutes and seconds
+                                        var days = Math.floor(SA06distance4 / (1000 * 60 * 60 * 24));
+                                        var hours = Math.floor((SA06distance4 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                        var minutes = Math.floor((SA06distance4 % (1000 * 60 * 60)) / (1000 * 60));
+                                        var seconds = Math.floor((SA06distance4 % (1000 * 60)) / 1000);
+
+                                        // Output the result in an element with id="SA06"
+                                        document.getElementById("SA06").innerHTML = days + "d " + hours + "h " +
+                                            minutes + "m " + seconds + "s ";
+
+                                        // If the count down is over, write some text 
+                                        if (SA06distance4 < 0) {
+                                            clearInterval(SA06CDF4);
+                                            if (SA06distance4 < 0 & SA06distance4 > (-1000 * 24 * 60 * 60))
+                                                document.getElementById("SA06").innerHTML = "Happy Birthday!";
+                                            else {
+                                                clearInterval(SA06CDF4);
+                                                // Set the fourth date we're counting down to
+                                                var SA06CDD5 = new Date("Sep 26, 2026 0:00:01").getTime();
+
+                                                // Update the count down every 1 second
+                                                var SA06CDF5 = setInterval(function() {
+
+                                                    // Get todays date and time
+                                                    var now = new Date().getTime();
+
+                                                    // Find the distance between now an the count down date
+                                                    var SA06distance5 = SA06CDD5 - now;
+
+                                                    // Time calculations for days, hours, minutes and seconds
+                                                    var days = Math.floor(SA06distance5 / (1000 * 60 * 60 * 24));
+                                                    var hours = Math.floor((SA06distance5 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                                    var minutes = Math.floor((SA06distance5 % (1000 * 60 * 60)) / (1000 * 60));
+                                                    var seconds = Math.floor((SA06distance5 % (1000 * 60)) / 1000);
+
+                                                    // Output the result in an element with id="SA06"
+                                                    document.getElementById("SA06").innerHTML = days + "d " + hours + "h " +
+                                                        minutes + "m " + seconds + "s ";
+
+                                                    // If the count down is over, write some text 
+                                                    if (SA06distance5 < 0) {
+                                                        clearInterval(SA06CDF5);
+                                                        document.getElementById("SA06").innerHTML = "Happy Birthday!";
+                                                    }
+                                                }, 1000);
+                                            }
+                                        }
+                                    }, 1000);
+                                }
+                            }
+                        }, 1000);
+                    }
+                }
+            }, 1000);
+        }
+    }
+}, 1000);
+// Set the first date we're counting down to
+var XB06CDD1 = new Date("Oct 6, 2022 0:00:01").getTime();
+
+// Update the count down every 1 second
+var XB06CDF1 = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now an the count down date
+    var XB06distance1 = XB06CDD1 - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(XB06distance1 / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((XB06distance1 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((XB06distance1 % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((XB06distance1 % (1000 * 60)) / 1000);
+
+    // Output the result in an element with id="XB06"
+    document.getElementById("XB06").innerHTML = days + "d " + hours + "h " +
+        minutes + "m " + seconds + "s ";
+
+    // If the count down is over, write some text 
+    if (XB06distance1 < 0) {
+        clearInterval(XB06CDF1);
+        if (XB06distance1 < 0 & XB06distance1 > (-1000 * 24 * 60 * 60))
+            document.getElementById("XB06").innerHTML = "Happy Birthday!";
+        else {
+            clearInterval(XB06CDF1);
+            // Set the second date we're counting down to
+            var XB06CDD2 = new Date("Oct 6, 2023 0:00:01").getTime();
+
+            // Update the count down every 1 second
+            var XB06CDF2 = setInterval(function() {
+
+                // Get todays date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now an the count down date
+                var XB06distance2 = XB06CDD2 - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(XB06distance2 / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((XB06distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((XB06distance2 % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((XB06distance2 % (1000 * 60)) / 1000);
+
+                // Output the result in an element with id="XB06"
+                document.getElementById("XB06").innerHTML = days + "d " + hours + "h " +
+                    minutes + "m " + seconds + "s ";
+
+                // If the count down is over, write some text 
+                if (XB06distance2 < 0) {
+                    clearInterval(XB06CDF2);
+                    if (XB06distance2 < 0 & XB06distance2 > (-1000 * 24 * 60 * 60))
+                        document.getElementById("XB06").innerHTML = "Happy Birthday!";
+                    else {
+                        clearInterval(XB06CDF2);
+                        // Set the Third date we're counting down to
+                        var XB06CDD3 = new Date("Oct 6, 2024 0:00:01").getTime();
+
+                        // Update the count down every 1 second
+                        var XB06CDF3 = setInterval(function() {
+
+                            // Get todays date and time
+                            var now = new Date().getTime();
+
+                            // Find the distance between now an the count down date
+                            var XB06distance3 = XB06CDD3 - now;
+
+                            // Time calculations for days, hours, minutes and seconds
+                            var days = Math.floor(XB06distance3 / (1000 * 60 * 60 * 24));
+                            var hours = Math.floor((XB06distance3 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            var minutes = Math.floor((XB06distance3 % (1000 * 60 * 60)) / (1000 * 60));
+                            var seconds = Math.floor((XB06distance3 % (1000 * 60)) / 1000);
+
+                            // Output the result in an element with id="XB06"
+                            document.getElementById("XB06").innerHTML = days + "d " + hours + "h " +
+                                minutes + "m " + seconds + "s ";
+
+                            // If the count down is over, write some text 
+                            // If the count down is over, write some text 
+                            if (XB06distance3 < 0) {
+                                clearInterval(XB06CDF3);
+                                if (XB06distance3 < 0 & XB06distance3 > (-1000 * 24 * 60 * 60))
+                                    document.getElementById("XB06").innerHTML = "Happy Birthday!";
+                                else {
+                                    clearInterval(XB06CDF3);
+                                    // Set the fourth date we're counting down to
+                                    var XB06CDD4 = new Date("Oct 6, 2025 0:00:01").getTime();
+
+                                    // Update the count down every 1 second
+                                    var XB06CDF4 = setInterval(function() {
+
+                                        // Get todays date and time
+                                        var now = new Date().getTime();
+
+                                        // Find the distance between now an the count down date
+                                        var XB06distance4 = XB06CDD4 - now;
+
+                                        // Time calculations for days, hours, minutes and seconds
+                                        var days = Math.floor(XB06distance4 / (1000 * 60 * 60 * 24));
+                                        var hours = Math.floor((XB06distance4 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                        var minutes = Math.floor((XB06distance4 % (1000 * 60 * 60)) / (1000 * 60));
+                                        var seconds = Math.floor((XB06distance4 % (1000 * 60)) / 1000);
+
+                                        // Output the result in an element with id="XB06"
+                                        document.getElementById("XB06").innerHTML = days + "d " + hours + "h " +
+                                            minutes + "m " + seconds + "s ";
+
+                                        // If the count down is over, write some text 
+                                        if (XB06distance4 < 0) {
+                                            clearInterval(XB06CDF4);
+                                            if (XB06distance4 < 0 & XB06distance4 > (-1000 * 24 * 60 * 60))
+                                                document.getElementById("XB06").innerHTML = "Happy Birthday!";
+                                            else {
+                                                clearInterval(XB06CDF4);
+                                                // Set the fourth date we're counting down to
+                                                var XB06CDD5 = new Date("Oct 6, 2026 0:00:01").getTime();
+
+                                                // Update the count down every 1 second
+                                                var XB06CDF5 = setInterval(function() {
+
+                                                    // Get todays date and time
+                                                    var now = new Date().getTime();
+
+                                                    // Find the distance between now an the count down date
+                                                    var XB06distance5 = XB06CDD5 - now;
+
+                                                    // Time calculations for days, hours, minutes and seconds
+                                                    var days = Math.floor(XB06distance5 / (1000 * 60 * 60 * 24));
+                                                    var hours = Math.floor((XB06distance5 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                                    var minutes = Math.floor((XB06distance5 % (1000 * 60 * 60)) / (1000 * 60));
+                                                    var seconds = Math.floor((XB06distance5 % (1000 * 60)) / 1000);
+
+                                                    // Output the result in an element with id="XB06"
+                                                    document.getElementById("XB06").innerHTML = days + "d " + hours + "h " +
+                                                        minutes + "m " + seconds + "s ";
+
+                                                    // If the count down is over, write some text 
+                                                    if (XB06distance5 < 0) {
+                                                        clearInterval(XB06CDF5);
+                                                        document.getElementById("XB06").innerHTML = "Happy Birthday!";
                                                     }
                                                 }, 1000);
                                             }
