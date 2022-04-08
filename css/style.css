@@ -123,6 +123,7 @@ html::-webkit-scrollbar-thumb {
     padding: 20px 30px;
     font-weight: 100;
     letter-spacing: 1px;
+    font-size: 12px;
 }
 
 @media screen and (max-width:1200px) {
@@ -159,4 +160,15 @@ html::-webkit-scrollbar-thumb {
     #myUL li h4 {
         font-size: 12px;
     }
+}
+
+.footer a {
+    text-decoration: none;
+    background-color: none;
+    color: #fff;
+    font-weight: 100;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
